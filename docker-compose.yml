@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  api:
+    image: docker-bromotec-api
+    build: ./src
+    command: node index.js
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/usr/src/app
+      - usr/src/app/node_modules
+    depends_on:
+      - "mongo"
+
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+
+  adminmongo:
+    image: "mrvautin/adminmongo"
+    ports:
+      - "1234:1234"
+    environment:
+      - HOST=0.0.0.0

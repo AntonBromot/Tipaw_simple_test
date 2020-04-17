@@ -1,0 +1,95 @@
+@import "../variables";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .content {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    .leftSide {
+      .navLogo {
+        img {
+          width: 80px;
+          height: 37px;
+        }
+      }
+    }
+    .rightSide {
+      .topNav {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 7px;
+        .navItem {
+          margin-left: 20px;
+          font-size: 10px;
+          color: $color-lightgray;
+        }
+      }
+      .bottomNav {
+        display: flex;
+        justify-content: flex-end;
+
+        .dropContainer {
+          position: relative;
+          z-index: 10;
+          cursor: pointer;
+          .dropPlaceholder {
+            font-size: 10px;
+            padding: 5px 12px;
+            border-radius: 17px;
+            color: $color-darkgray;
+            margin-left: 15px;
+
+            &.navProfile {
+              background: $color-waverly;
+              font-weight: bold;
+              color: white;
+            }
+          }
+          .dropListWrapp {
+            padding-top: 20px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            .dropList {
+              width: 160px;
+              font-size: 10px;
+              color: white;
+              text-align: center;
+              background: $color-main-light;
+              border-radius: 3px;
+              overflow: hidden;
+              -webkit-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+              -moz-box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+              box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+              .dropItem {
+                padding: 5px 0;
+                cursor: pointer;
+                display: block;
+                color: white;
+                &:hover {
+                  opacity: 0.7;
+                }
+                &.navLogOut {
+                  background: $color-red;
+                  color: white;
+                }
+                &.firstElem {
+                  padding-top: 8px;
+                }
+                &.lastElem {
+                  padding-bottom: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

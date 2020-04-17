@@ -1,0 +1,33 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../resources/fonts/opensans/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../resources/fonts/opensans/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url('../resources/fonts/opensans/OpenSans-Semibold.ttf');
+}
+
+// fonts
+$font-default: 'OpenSans';
+$font-size-small: 14px ;
+$font-size-medium: 18px ;
+$font-size-big: 20px ;
+
+
+
+
+// colors
+$color-waverly: #ffcc00;
+$color-darkgray: #707070;
+$color-lightgray: #BDBDBD;
+$color-main-light: #5BCEE8;
+$color-red: red ;
+$color-white: white;
+

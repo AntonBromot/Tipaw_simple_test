@@ -1,0 +1,20 @@
+@import "../variables";
+
+.subHeader {
+  width: 100%;
+  height: 138px;
+  background: $color-main-light;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .mainText {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .additionText {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+}

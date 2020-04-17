@@ -1,0 +1,31 @@
+@import "../variables";
+
+.articleItem {
+  width: 100%;
+  -webkit-box-shadow: -1px -2px 28px 3px rgba(0,0,0,0.23);
+  -moz-box-shadow: -1px -2px 28px 3px rgba(0,0,0,0.23);
+  box-shadow: -1px -2px 28px 3px rgba(0,0,0,0.23);
+  border-radius: 8px;
+  padding: 15px 10px;
+  margin-bottom: 25px;
+  position: relative;
+  background: $color-white;
+  h3 {
+    font-size: 13px;
+    color: $color-darkgray;
+    margin-bottom: 10px;
+    span{
+      color: $color-lightgray;
+    }
+  }
+  .mainText {
+    color: $color-lightgray;
+    font-size: 13px;
+  }
+  .removeIcon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+}
